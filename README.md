@@ -1,1 +1,0 @@
-# website_of_the_online_store
