@@ -1,0 +1,61 @@
+@media (max-width: 1024px) {
+
+    .center {
+
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .promo {
+
+        gap: 40px;
+        margin-bottom: 19px;
+
+        &__title {
+
+            font-size: 44px;
+        }
+    
+        &__heading {
+    
+            font-size: 24px;
+        }
+    }
+
+    .sale {
+
+        gap: 20px;
+        padding-bottom: 154px;
+
+        &__item_big {
+
+            min-height: 116px;
+        }
+    }
+
+    .product-box{
+
+        padding-bottom: 64px;
+
+        &__heading {
+
+            margin-bottom: 3.3px;
+        }
+
+        &__text {
+            
+            margin-bottom: 73px;
+        }
+        &__content {
+            gap: 15px;
+        }
+    }
+
+    .advantages {
+        flex-direction: column;
+        min-height: 610px;
+        align-content: center;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+}

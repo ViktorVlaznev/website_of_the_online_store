@@ -1,0 +1,379 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.header {
+  min-height: 75px;
+  background: #222222;
+  display: flex;
+  justify-content: space-between;
+}
+.header__left {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  gap: 41px;
+}
+.header__right {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  gap: 33px;
+}
+.header .trash {
+  position: relative;
+}
+.header .trash_enum {
+  font-family: "Lato";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+  display: table;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  background-color: #F16D7F;
+  border-radius: 50%;
+  right: -25%;
+  top: -25%;
+  text-align: center;
+}
+.header .trash_number {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.promo {
+  min-height: 375px;
+  display: flex;
+  gap: 64px;
+  background-color: #F1E4E6;
+  margin-bottom: 64px;
+}
+.promo__img {
+  width: 50%;
+  background-color: rgba(113, 103, 105, 0.08);
+}
+.promo__content {
+  display: flex;
+  align-items: center;
+}
+.promo_rectangle {
+  background-color: #F16D7F;
+  width: 12px;
+  height: 92px;
+}
+.promo__info {
+  padding-left: 16px;
+}
+.promo__title {
+  font-family: "Lato";
+  font-size: 48px;
+  font-weight: 900;
+  line-height: normal;
+  color: #222222;
+  line-height: 58px;
+}
+.promo__heading {
+  font-family: "Lato";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  color: #222222;
+  line-height: 38px;
+}
+.promo .fashion_text {
+  background-color: #F1E4E6;
+  color: #F16D7F;
+}
+
+.sale {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 96px;
+}
+.sale__item {
+  position: relative;
+  width: 100%;
+}
+.sale__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sale__item_big {
+  background-image: url("img/sibig.jpg");
+  min-height: 180px;
+  grid-column: 1/-1;
+}
+.sale .sale__text {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFFFFF;
+}
+.sale .sale__heading {
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  color: #F16D7F;
+}
+
+.product-box {
+  padding-bottom: 96px;
+  text-align: center;
+}
+.product-box__heading {
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: normal;
+  color: #222222;
+  margin-bottom: 6px;
+}
+.product-box__text {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #9F9F9F;
+  margin-bottom: 48px;
+}
+.product-box__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 360px);
+  justify-content: center;
+  gap: 30px;
+}
+.product-box .product {
+  position: relative;
+}
+.product-box .product:hover .product__img {
+  filter: brightness(0.5);
+}
+.product-box .product:hover .product__add {
+  display: flex;
+}
+.product-box .product__add {
+  position: absolute;
+  top: 188px;
+  left: 111px;
+  border: 1px solid #fff;
+  width: 139px;
+  height: 44px;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFFFFF;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+.product-box .product__add:hover {
+  box-shadow: 0 0 5px #fff;
+}
+.product-box .product__add:hover svg path {
+  fill: #F16D7F;
+}
+.product-box .product__content {
+  background: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 16px;
+  gap: 16px;
+}
+.product-box .product__heading {
+  font-family: "Lato";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  color: #222222;
+}
+.product-box .product__text {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  color: #9F9F9F;
+  text-align: left;
+}
+.product-box .product__price {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #F16D7F;
+}
+.product-box .link_catalog {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #F16D7F;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  width: 212px;
+  height: 48px;
+  flex-shrink: 0;
+  background-color: #FFF;
+  border: 1px solid #F16D7F;
+  transition-duration: 0.4s;
+  text-align: center;
+}
+.product-box .text_catalog {
+  margin-top: 15px;
+}
+.product-box .link_catalog:hover {
+  color: #FFF;
+  background-color: #F16D7F;
+}
+
+.advantages {
+  background-color: #222222;
+  padding-top: 102px;
+  padding-bottom: 102px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.advantages__item {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;
+}
+.advantages__heading {
+  font-family: "Lato";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  color: #FBFBFB;
+}
+.advantages .advantages__text {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: normal;
+  color: #FBFBFB;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .promo {
+    gap: 40px;
+    margin-bottom: 19px;
+  }
+  .promo__title {
+    font-size: 44px;
+  }
+  .promo__heading {
+    font-size: 24px;
+  }
+  .sale {
+    gap: 20px;
+    padding-bottom: 154px;
+  }
+  .sale__item_big {
+    min-height: 116px;
+  }
+  .product-box {
+    padding-bottom: 64px;
+  }
+  .product-box__heading {
+    margin-bottom: 3.3px;
+  }
+  .product-box__text {
+    margin-bottom: 73px;
+  }
+  .product-box__content {
+    gap: 15px;
+  }
+  .advantages {
+    flex-direction: column;
+    min-height: 610px;
+    align-content: center;
+    padding-top: 48px;
+    padding-bottom: 64px;
+  }
+}
+@media (max-width: 767px) {
+  .center {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .header__link-site, .trash {
+    display: none;
+  }
+  .promo {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+  .promo__img {
+    display: none;
+  }
+  .promo__title {
+    font-size: 38px;
+  }
+  .promo__heading {
+    font-size: 20px;
+  }
+  .sale {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 64px;
+  }
+  .sale__item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .sale__item_big {
+    min-height: 111px;
+  }
+  .product-box {
+    padding-bottom: 96px;
+  }
+  .product-box__text {
+    margin-bottom: 65px;
+  }
+}/*# sourceMappingURL=style.css.map */
