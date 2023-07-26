@@ -62,5 +62,15 @@
         }
     }
 
-    
+    .feedback {
+        gap: 95px;
+        padding-bottom: 109px;
+    }
+
+    .footer {
+        height: 143px;
+        justify-content: space-evenly;
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
 }
