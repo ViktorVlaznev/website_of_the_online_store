@@ -297,6 +297,10 @@
 }
 
 .feedback {
+    background-image: url(img/fonfeedback.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     align-items: center;
