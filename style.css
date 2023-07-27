@@ -181,11 +181,16 @@ a {
     gap: 40px;
   }
 }
+.box-content {
+  overflow: hidden;
+}
+
 .header {
   min-height: 75px;
   background: #222222;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .header__left {
   display: flex;
@@ -222,6 +227,27 @@ a {
 .header .trash_number {
   display: table-cell;
   vertical-align: middle;
+}
+
+#header__check {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+#header__check:checked ~ .nav {
+  right: -232px;
+}
+
+.nav {
+  width: 232px;
+  background-color: #FFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 75px;
+  right: 0px;
+  transition: right 0.3s;
 }
 
 .promo {

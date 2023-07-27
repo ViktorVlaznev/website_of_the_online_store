@@ -3,12 +3,17 @@
 @import 'mixins';
 @import 'product';
 
+.box-content {
+    overflow: hidden;
+}
+
 .header {
 
     min-height: 75px;
     background: $colorHeaderFooter;
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     &__left {
 
@@ -49,6 +54,31 @@
             vertical-align: middle;
         }
     }
+}
+
+#header__check {
+
+    position: absolute;
+    left: -999999px;
+    visibility: hidden;
+
+    &:checked ~.nav {
+        right: -$widthMenu;
+    }
+}
+
+
+
+.nav {
+    width: 232px;
+    background-color: #FFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 32px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    transition: right .3s;
 }
 
 .promo {
