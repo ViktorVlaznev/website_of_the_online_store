@@ -10,6 +10,13 @@
         display: none;
     }
 
+    .top_head {
+
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+    }
+
     .promo {
 
         justify-content: center;
@@ -73,4 +80,5 @@
         flex-direction: column-reverse;
         gap: 40px;
     }
+
 }

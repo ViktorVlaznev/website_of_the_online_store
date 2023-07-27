@@ -1,0 +1,30 @@
+@import 'vars';
+@import 'mixins';
+
+
+.top_head {
+
+    min-height: 148px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F3F4;;
+
+    &_heading {
+
+        @include txt(24px, 400, normal, $colorTypical);
+    }
+
+    &_link {
+
+        @include txt(14px, 300, normal, #636363);
+
+        &_site {
+
+            @include txt(14px, 700, normal, $colorTypical);
+        }
+    }
+}
+
+@import 'tablet';
+@import 'mobile';
