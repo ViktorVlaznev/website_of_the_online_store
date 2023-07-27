@@ -17,6 +17,18 @@
         gap: 32px;
     }
 
+    .product_img {
+
+        padding: 85px 0 85px 0px;
+
+        &_photo {
+            
+            width: 374px;
+            height: 454px;
+        }
+
+    }
+
     .promo {
 
         justify-content: center;

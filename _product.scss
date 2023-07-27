@@ -26,5 +26,25 @@
     }
 }
 
+.product_img {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0 42px 0px;
+    background-color: #F7F7F7;
+
+    &_arrow {
+        width: 47px;
+        height: 47px;
+        background-color: rgba(42, 42, 42, 0.15);
+        text-align: center;
+    }
+
+    &_arrow_left, &_arrow_right {
+        margin-top: 8px;
+    }
+}
+
 @import 'tablet';
 @import 'mobile';
