@@ -242,12 +242,52 @@ a {
   width: 232px;
   background-color: #FFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  padding: 32px;
+  padding: 37px 0 0 34px;
   box-sizing: border-box;
   position: absolute;
   top: 75px;
   right: 0px;
   transition: right 0.3s;
+  z-index: 1;
+}
+.nav__heading {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  color: #000;
+  margin-bottom: 24px;
+}
+.nav__title {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #F16D7F;
+}
+.nav__title:hover {
+  color: #6F6E6E;
+}
+.nav__list {
+  margin: 12px 0 9px 0;
+  list-style-type: none;
+  transition-duration: 0.4s;
+}
+.nav__li {
+  padding-bottom: 11px;
+}
+.nav__link {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #6F6E6E;
+  margin-left: 21px;
+  transition-duration: 0.4s;
+  margin-bottom: 11px;
+}
+.nav__link:hover {
+  color: #F16D7F;
 }
 
 .promo {
