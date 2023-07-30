@@ -3,6 +3,8 @@
 
 .filter_sort {
 
+    display: flex;
+    gap: 390px;
     height: 113px;
     box-sizing: border-box;
     position: relative;
@@ -82,7 +84,51 @@
         }
     }
 
+    &_sort {
 
+        display: flex;
+        gap: 28px;
+
+        &_details {
+
+            position: relative;
+        }
+
+        &_summary {
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &_heading {
+        
+            @include txt(14px, 400, normal, #6F6E6E);
+        }
+
+        &_box {
+
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: #FFF;
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            padding: 7px 30px 11px 9px;
+            margin-top: 5px;
+            position: absolute;
+            z-index: 1;
+            left: -9px;
+        }
+
+        &_check {
+
+            display: flex;
+            gap: 9px;
+            align-items: center;
+            @include txt(14px, 400, normal, #6F6E6E);
+            font-family: Roboto;
+        }
+    }
 }
 
 @import 'tablet';

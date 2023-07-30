@@ -186,6 +186,8 @@ a {
   }
 }
 .filter_sort {
+  display: flex;
+  gap: 390px;
   height: 113px;
   box-sizing: border-box;
   position: relative;
@@ -253,6 +255,48 @@ a {
 }
 .filter_sort_filter_link:hover {
   color: #F16D7F;
+}
+.filter_sort_sort {
+  display: flex;
+  gap: 28px;
+}
+.filter_sort_sort_details {
+  position: relative;
+}
+.filter_sort_sort_summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.filter_sort_sort_heading {
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #6F6E6E;
+}
+.filter_sort_sort_box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 11px 9px;
+  margin-top: 5px;
+  position: absolute;
+  z-index: 1;
+  left: -9px;
+}
+.filter_sort_sort_check {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  color: #6F6E6E;
+  font-family: Roboto;
 }
 
 @media (max-width: 1024px) {
