@@ -17,6 +17,38 @@
         gap: 32px;
     }
 
+    .filter_sort {
+
+        gap:0;
+        justify-content: space-between;
+
+        &_filter {
+
+            &_summary{
+
+                &_span {
+
+                    display: none;
+                }
+
+                svg {
+
+                    width: 37.5px;
+                    height: 25px;
+                }
+            }
+        }
+
+        &_sort {
+
+            &_heading {
+
+                font-size: 12px;
+
+            }
+        }
+    }
+
     .product_img {
 
         padding: 85px 0 85px 0px;

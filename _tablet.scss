@@ -1,5 +1,9 @@
 @media (max-width: 1024px) {
 
+    .delete {
+        display: none;
+    }
+
     .center {
 
         padding-left: 5%;
@@ -20,6 +24,13 @@
     
             font-size: 24px;
         }
+    }
+
+    .filter_sort {
+
+        height: 81px;
+        padding-top: 24px;
+        padding-bottom: 40px;
     }
 
     .product_img {

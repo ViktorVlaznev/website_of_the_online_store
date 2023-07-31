@@ -14,6 +14,20 @@
         @include txt(24px, 400, normal, $colorTypical);
     }
 
+    &_ul {
+
+        display: flex;
+        list-style-type: none;
+    }
+
+    &_li:not(:last-child)::after {
+
+        content: '/';
+        padding-right: 8px;
+        padding-left: 8px;
+        @include txt(14px, 300, normal, #636363);
+    }
+
     &_link {
 
         @include txt(14px, 300, normal, #636363);
@@ -21,6 +35,11 @@
         &_site {
 
             @include txt(14px, 700, normal, $colorTypical);
+        }
+
+        &:hover {
+
+            color: $colorTypical;
         }
     }
 }
