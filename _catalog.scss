@@ -131,5 +131,46 @@
     }
 }
 
+.product-box__pages {
+
+    width: 284px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 48px auto 0;
+    padding: 15px;
+    border: 1px solid #EBEBEB;
+    border-radius: 10px;
+
+    &__arrows {
+        box-sizing: border-box;
+        padding-top: 2px;
+    }
+
+    &__arrows:hover path{
+
+        fill: $colorTypical;
+    }
+
+
+    &__link-box {
+
+        display: flex;
+        gap: 10px;
+    }
+
+    &__link-box__link {
+
+        @include txt(16px, 300, normal, #C4C4C4);
+    }
+
+    &__link-box__link:hover {
+        
+        color: $colorTypical;
+    }
+
+}
+
+
 @import 'tablet';
 @import 'mobile';

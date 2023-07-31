@@ -338,6 +338,38 @@ a {
   font-family: Roboto;
 }
 
+.product-box__pages {
+  width: 284px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 48px auto 0;
+  padding: 15px;
+  border: 1px solid #EBEBEB;
+  border-radius: 10px;
+}
+.product-box__pages__arrows {
+  box-sizing: border-box;
+  padding-top: 2px;
+}
+.product-box__pages__arrows:hover path {
+  fill: #F16D7F;
+}
+.product-box__pages__link-box {
+  display: flex;
+  gap: 10px;
+}
+.product-box__pages__link-box__link {
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+  color: #C4C4C4;
+}
+.product-box__pages__link-box__link:hover {
+  color: #F16D7F;
+}
+
 @media (max-width: 1024px) {
   .delete {
     display: none;
